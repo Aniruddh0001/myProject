@@ -3,11 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.1.3",
+    "node-sass": "^4.9.4",
+    "npm-sass": "^2.3.0",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
-    "react-scripts": "2.1.0"
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.0",
+    "semantic-ui-react": "^0.83.0"
   },
   "scripts": {
+    "build:css": "node-sass src/styles/css/app.scss -o public/css --output-style compressed",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
